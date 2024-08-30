@@ -1,17 +1,20 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
-import { NavBar } from "./navbar";
+import { NavBar } from "./navbar.jsx";
+import { Jumbotron } from "./jumbotron.jsx";
+import { Cards } from "./cards.jsx";
 
 // create your first component
-const Home = (props) => {
+const Home = () => {
     return (
         <div>
             <NavBar />
+            <div className="container">
+            <Jumbotron />
+            <Cards />
+            </div>
+            
         </div>
     )
 };
-
-const root = createRoot(document.getElementById("root"));
-root.render(<Home />);
 
 export default Home;

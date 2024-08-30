@@ -1,4 +1,5 @@
-export const NavBar = (props) => {
+import React from "react";
+export const NavBar = () => {
     return (
         <div className="text-center">
             <nav className="navbar navbar-expand-lg bg-dark">
